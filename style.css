@@ -1,0 +1,380 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.introContainer{
+    width: 100%;
+    height: 100vh;
+     background-image: url('./images/backgroundImg.jpg');
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+}
+.intro{
+    border: 2px solid rgba(255, 255, 255, 0.518);
+    min-width: 70%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.265);
+    text-align: center;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+.intro h1{
+    font-family: "Dancing Script", cursive; 
+    font-size: 6rem;
+
+}
+.intro .p{
+    font-family: "Montserrat", sans-serif;
+    border-bottom: 2px solid white;
+    padding: 20px 5px;
+    
+
+}
+.date{
+    font-family: "Montserrat", sans-serif;
+    border-bottom: none;
+    padding: 25px 5px;
+}
+.comingSoon {
+    width: 100%;
+    height: 100vh;
+    background-color: #111612;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+   
+}
+.comingSoon .p{
+    font-family: "Montserrat", sans-serif;
+    border-bottom: 2px solid white;
+     padding: 10px 5px; 
+     margin-top: 60px;
+    
+}
+.center{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    
+}
+.DateContainer{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+.days{
+   
+    width: 35vw;
+    height: 25vh;
+    text-align: center;
+}
+.hours{
+   
+    width: 35vw;
+    height: 25vh;
+    text-align: center;
+}
+.minutes{
+    
+    width: 35vw;
+    height: 25vh;
+    text-align: center;
+}
+.seconds{
+    
+    width: 35vw;
+    height: 25vh;
+    text-align: center;
+}
+.dateNo{
+    font-family: "Dancing Script", cursive; 
+    font-size: 4rem;
+}
+.dateText{
+    font-family: "Montserrat", sans-serif;
+}
+.aboutCouples{
+    min-height: 100vh;
+    background-color: #4b5c4c;
+    color: white;
+    
+}
+.aboutCouples h1{
+    font-family: "Dancing Script", cursive; 
+    font-size: 4rem;
+    text-align: center;
+    padding: 10px;
+}
+.couples{
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.lily{
+    border: 2px solid rgba(0, 0, 0, 0.434);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:  0 5px;
+
+
+}
+.lily h3{
+    font-family: "Dancing Script", cursive; 
+    font-size: 2rem;
+    text-align: start;
+    padding: 15px 0;
+}
+.lilyImage{
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    background-image: url('./images/Forsky-276.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.coupleImage img{
+    width: 100%;
+    height: 100%;
+}
+.coupleText{
+    font-family: "Montserrat", sans-serif;
+    padding: 15px 0;
+}
+.andrew{
+    border: 2px solid rgba(0, 0, 0, 0.434);
+    border-top: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:0 5px;
+}
+.andrew h3{
+    font-family: "Dancing Script", cursive; 
+    font-size: 2rem;
+    text-align: start;
+    padding: 15px 0;
+}
+.andrewImage{
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    background-image: url('./images/Forsky-246.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.loveStory{
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    background-color: #4b5c4c;
+    border: 2px solid transparent;
+    margin: 0;
+}
+.loveStory h2{
+    font-family: "Dancing Script", cursive; 
+    font-size: 4rem;
+    text-align: center;
+    padding: 10px;
+
+}
+.story{
+    margin: 10px;
+    height: 100%;
+    width: auto;
+    padding: 10px;
+    border-left: 2px solid rgba(0, 0, 0, 0.434);
+}
+.storyImage1{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    outline: 2px solid rgba(0, 0, 0, 0.434) ;
+    outline-offset: 5px;
+    background-image: url('./images/Forsky-306.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.story h3{
+    font-family: "Dancing Script", cursive; 
+    font-size: 2rem;
+    text-align: start;
+    padding: 10px 0;
+    margin: 10px 0;
+    
+    
+}
+.story p{
+    padding: 10px 0;
+    font-family: "Montserrat", sans-serif;
+}
+.storyImage2{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    outline: 2px solid rgba(0, 0, 0, 0.434) ;
+    outline-offset: 5px;
+    background-image: url('./images/engage.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.storyImage3{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    outline: 2px solid rgba(0, 0, 0, 0.434) ;
+    outline-offset: 5px;
+    background-image: url('./images/IMG_7439.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.gallery{
+    min-height: 100vh;
+    background-color: #445344;
+    color: white;
+    border: 0.1px solid transparent; 
+    margin: 0;
+
+}
+.gallery h2{
+    font-family: "Dancing Script", cursive; 
+    font-size: 4rem;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+.imageContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    gap: 10px;
+}
+.imageContainer img{
+    max-width: 300px;
+    max-height: 300px;
+}
+.btn{
+    margin:10px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.btn button{
+    border: 1px solid white;
+    padding: 5px 5px;
+    background: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+
+}
+.btn button:hover{
+    border: none;
+    background: white;
+    color: black;
+}
+.location{
+    min-height: 100vh;
+    background-color: #445344f5;
+    color: white;
+    border: 0.1px solid transparent; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+   
+}
+.location h2{
+    font-family: "Dancing Script", cursive; 
+    font-size: 4rem;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0;
+
+
+}
+.preWedLocation{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    border: 2px solid rgba(0, 0, 0, 0.434);
+}
+.preWeddingLocationImage{
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    background-image: url('./images/Forsky-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.preWedLocation h3{
+    font-family: "Dancing Script", cursive; 
+    font-size: 2rem;
+    text-align: start;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+.loctionCenter{
+    
+    padding: 10px;
+}
+.loctionCenter p{
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 0;
+}
+.loctionCenter button{
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    padding: 5px 20px ;
+    border: none;
+    margin: 10px 0;
+}
+.location p{
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 0 20px 0;
+}
+.location p a{
+    color: white;
+    text-align: center;
+}
+
+@media (max-width:768px){
+    .intro{
+        min-width: 90%;
+    }
+    .imageContainer{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+}

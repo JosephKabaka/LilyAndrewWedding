@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="introContainer">
+        <div class="intro">
+            <h1>Lily & <br> Andrew </h1>
+            <p class="p" >WE'RE GETTING MARRIED!</p>
+            <p class="date">
+                THURSDAY, DECEMBER 19TH, <br>
+                2024
+            </p>
+        </div>
+
+    </div>
+    <div id="comingSoon" class="comingSoon">
+        <p class="p" >COMING SOON!</p>
+        
+    <div class="DateContainer">
+        <div class="center">
+        <div class="days">
+         <div class="dateNo">
+            <p id="days"></p>
+         </div>
+         <div class="dateText">
+            DAYS
+         </div>
+        </div>
+        <div class="hours">
+            <div class="dateNo">
+                <p id="hours"></p>
+             </div>
+             <div class="dateText">
+                HOURS
+             </div>
+
+        </div>
+        <div class="minutes">
+            <div class="dateNo">
+               <p id="minutes"></p> 
+             </div>
+             <div class="dateText">
+                MINUTES
+             </div>
+
+        </div>
+        <div class="seconds">
+            <div class="dateNo">
+                <p id="seconds"></p>
+             </div>
+             <div class="dateText">
+                SECONDS
+             </div>
+
+        </div>
+        <script>
+            const weddingDay= new Date("December 19 , 2024 00:00:00").getTime();
+
+            const countDown=setInterval(function(){
+                const now=new Date().getTime();
+                const timeDiff=weddingDay-now;
+
+                const days=Math.floor(timeDiff/(1000*60*60*24));
+                const hours= Math.floor((timeDiff % (1000*60*60*24))/(1000*60*60));
+                const minutes= Math.floor((timeDiff % (1000*60*60))/(1000*60));
+                const seconds= Math.floor((timeDiff % (1000*60))/1000);
+                document.getElementById('days').innerHTML=days;
+                document.getElementById('hours').innerHTML=hours;
+                document.getElementById('minutes').innerHTML=minutes;
+                document.getElementById('seconds').innerHTML=seconds;
+                if(timeDiff<0){
+                    document.getElementById('comingSoon').innerHTML="This Is The Big Day !"
+                }
+            },1000);
+        </script>
+    </div>
+    </div>
+
+    </div>
+    <div class="aboutCouples">
+        <h1>About Us</h1>
+        <div class="couples">
+            <div class="lily">
+                <div class="lilyContents">
+                <div class="lilyImage">
+                    <!-- <img src="./images/Forsky-276.jpg" alt=""> -->
+                </div>
+                <h3>Lily Kabaka</h3>
+                <div class="coupleText">
+                    <p>Lily is a vibrant and caring person, always full of energy and known for her kind heart. She loves spending time with her close friends and family, and her upcoming marriage is a moment she’s been excited about for months. With her organized and thoughtful nature, she’s made sure every detail of the big day will be perfect.</p>
+                </div>
+            </div>
+            </div>
+            <div class="andrew">
+                <div class="lilyContents">
+                <div class="andrewImage">
+                    <!-- <img src="./images/Forsky-276.jpg" alt=""> -->
+                </div>
+                <h3>Andrew Mlolwa</h3>
+                <div class="coupleText">
+                    <p>Andrew is calm, reliable, and always supportive. He’s the type of person who finds joy in making others happy, especially Lily. His laid-back demeanor complements Lily’s lively spirit, and together, they balance each other out beautifully.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+     <div class="loveStory">
+        <h2>Courtship</h2>
+          <div class="story">
+            
+          <div class="storyImage1">
+
+            </div> 
+            <h3>First Meet</h3>
+            <p>Wednesday, July 1st ,2020</p>
+            <p>Lily and Andrew first met at a garden party hosted by a mutual friend. Lily, always organized, had arrived early to help set up. Andrew, on the other hand, showed up late with a casual excuse about getting lost in a park. Despite their differences, they hit it off instantly—Andrew’s easygoing humor made Lily laugh, while her calm, thoughtful nature intrigued him. That first meeting sparked a connection neither of them expected.</p> 
+
+             <div class="storyImage2">
+
+            </div> 
+            <h3>Fisrt Date</h3>
+            <p>Thursday, October 20th ,2022</p>
+             <p>A few months after their first meeting, Andrew invited Lily out for coffee at a cozy local café. It wasn’t anything fancy, but it was perfect. They spent hours talking, laughing, and discovering how much they enjoyed each other’s company. The simplicity of the evening made it unforgettable, as they both realized that love doesn’t need grand gestures—it grows in quiet, shared moments.</p>  
+
+               <div class="storyImage3"> 
+ 
+            </div>  
+            <h3>Marriage Proposal</h3>
+            <p>Wednesday, August 21st ,2024</p>
+             <p>On a quiet hike to one of their favorite spots, Andrew surprised Lily with a proposal. As they stood overlooking a beautiful valley, he got down on one knee, ring in hand, and asked her to marry him. It was spontaneous, sincere, and perfectly them. With tears in her eyes, Lily said yes, knowing that their future together would be full of love and adventure</p>   
+        </div>     
+        
+
+      
+        
+    </div> 
+    <div class="gallery">
+        <h2>Gallery</h2>
+        <div class="imageContainer">
+           
+            <img src="./images/Forsky-109.jpg" alt="">
+            <img src="./images/Forsky-239.jpg" alt="">
+            <img src="./images/Forsky-107 (1).jpg" alt="">
+            <img src="./images/Forsky-332.jpg" alt="">
+            <img src="./images/Forsky-280.jpg" alt="">
+            
+        </div>
+
+
+        
+    </div>
+    <div class="location">
+        <h2>Time & Place</h2>
+        <div class="preWedLocation">
+          <div class="loctionCenter">
+            <div class="preWeddingLocationImage"> 
+ 
+            </div>
+             <h3>Pre-Wedding</h3>
+            <p>19th DECEMBER, 2024 </p>
+            <P>ELDORO , TAVETA</P>
+            <p>Lily’s pre-marriage party is happening soon, and we’d love for you to join us! It’ll be at her place, Eldoro, in Taveta.Hope to see you there for the celebration!</p> 
+            <a href="https://www.google.com/maps/place/Divine+Mercy+Eldoro+(Catholic)+Dispensary/@-3.479378,37.6785751,16z/data=!4m10!1m2!2m1!1seldoro+taveta!3m6!1s0x1839b5987db6d803:0x5b17a42be940ab90!8m2!3d-3.479378!4d37.6829525!15sCg1lbGRvcm8gdGF2ZXRhkgEIaG9zcGl0YWzgAQA!16s%2Fg%2F1hdzynztc?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                <button>MAPS.GOOGLE.COM</button>
+            </a>
+            
+        
+           </div> 
+
+        </div>
+        <div class="btn">
+            <a href="https://chat.whatsapp.com/LW4Z9OyKz3RHPq59XPxXhP" target="_blank">
+                <button> CONTRIBUTE <i class="fa-solid fa-arrow-right fa-fade"></i> </button>
+            </a>
+            
+
+        </div>
+        <p>Made With ❤️ by  <a  href="https://josephkabaka.github.io/CodeAlpha_Portfolio/"> Joseph Kabaka</a></p>
+    </div>
+</body>
+</html>
